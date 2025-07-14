@@ -1,0 +1,46 @@
+# Messages for EdenBazaar - Now using modern MiniMessage format!
+# For format help, see: https://docs.advntr.dev/minimessage/format.html
+# Color scheme: Purple (#9D4EDD), Cyan (#06FFA5), Pink (#FFB3C6), Red (#FF6B6B), Green (#51CF66), Gray (#ADB5BD)
+
+messages:
+  # Shop spawn/despawn messages
+  shop_spawned: "<color:#FF6B6B>⚠️</color> <bold><color:#9D4EDD>[MOBILE BAZAAR]</color></bold> <white>Has appeared at</white> <color:#06FFA5>{location}</color><white>!</white> <color:#ADB5BD>🕒 Available for</color> <color:#51CF66>{duration} hours</color><white>!</white> <color:#FF6B6B>🔥</color>"
+  shop_despawned: "<color:#ADB5BD>💨</color> <bold><color:#9D4EDD>[MOBILE BAZAAR]</color></bold> <white>Has vanished! Check back later!</white> <color:#ADB5BD>🌙</color>"
+  
+  # Purchase messages
+  purchase_success: "<color:#51CF66>✅ Successfully purchased</color> <white>{item}</white> <color:#51CF66>for</color> <color:#FFB3C6>{price}</color><color:#51CF66>!</color>"
+  not_enough_money: "<color:#FF6B6B>❌ You don't have enough money! Required:</color> <color:#FFB3C6>{price}</color><color:#FF6B6B>, Your balance:</color> <color:#FFB3C6>{balance}</color>"
+  inventory_full: "<color:#FF6B6B>❌ Your inventory is full! Make some space first.</color>"
+  payment_failed: "<color:#FF6B6B>❌ Payment failed! Please try again.</color>"
+  
+  # Permission messages
+  no_permission: "<color:#FF6B6B>❌ You don't have permission to use this command!</color>"
+  
+  # Command messages
+  bazaar_not_active: "<color:#FF6B6B>❌ The bazaar is not currently active!</color>"
+  bazaar_already_active: "<color:#FF6B6B>❌ The bazaar is already active!</color>"
+  location_added: "<color:#51CF66>✅ Location '<color:#06FFA5>{name}</color>' added successfully!</color>"
+  item_added: "<color:#51CF66>✅ Item added to tier '<color:#9D4EDD>{tier}</color>' successfully!</color>"
+  config_reloaded: "<color:#51CF66>✅ Configuration reloaded successfully!</color>"
+  
+  # Error messages
+  invalid_material: "<color:#FF6B6B>❌ Invalid material:</color> <color:#FFB3C6>{material}</color>"
+  invalid_price: "<color:#FF6B6B>❌ Invalid price range! Min:</color> <color:#FFB3C6>{min}</color><color:#FF6B6B>, Max:</color> <color:#FFB3C6>{max}</color>"
+  player_only: "<color:#FF6B6B>❌ This command can only be used by players!</color>"
+  
+  # Info messages
+  bazaar_info_header: "<bold><color:#FFB3C6>=== Bazaar Information ===</color></bold>"
+  bazaar_location: "<color:#9D4EDD>Location:</color> <white>{location}</white>"
+  bazaar_coordinates: "<color:#9D4EDD>Coordinates:</color> <white>{x}, {y}, {z}</white>"
+  bazaar_world: "<color:#9D4EDD>World:</color> <white>{world}</white>"
+  bazaar_items: "<color:#9D4EDD>Items:</color> <white>{count}</white>"
+  bazaar_time_left: "<color:#9D4EDD>Time left:</color> <white>{time}</white>"
+  
+  # Help messages
+  help_header: "<bold><color:#FFB3C6>=== EdenBazaar Commands ===</color></bold>"
+  help_spawn: "<color:#06FFA5>/bazaar spawn</color> <color:#ADB5BD>- Manually spawn the bazaar</color>"
+  help_despawn: "<color:#06FFA5>/bazaar despawn</color> <color:#ADB5BD>- Despawn the current bazaar</color>"
+  help_setlocation: "<color:#06FFA5>/bazaar setlocation <name></color> <color:#ADB5BD>- Add a spawn location</color>"
+  help_additem: "<color:#06FFA5>/bazaar additem <tier> <material> <min> <max></color> <color:#ADB5BD>- Add item to loot pool</color>"
+  help_reload: "<color:#06FFA5>/bazaar reload</color> <color:#ADB5BD>- Reload configuration</color>"
+  help_info: "<color:#06FFA5>/bazaar info</color> <color:#ADB5BD>- Show current bazaar info</color>"

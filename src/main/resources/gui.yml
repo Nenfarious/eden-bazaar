@@ -1,0 +1,59 @@
+# GUI Configuration for the Mobile Bazaar - Updated to MiniMessage format!
+
+gui:
+  title: "<bold><color:#FFB3C6>Mobile Bazaar</color></bold>"
+  size: 27
+  
+  # Slots where items will be placed
+  item_slots: [10, 12, 14, 16, 22]
+  
+  # Special item slots
+  info_slot: 4
+  close_slot: 26
+  
+  # Background item
+  background:
+    material: "GRAY_STAINED_GLASS_PANE"
+    name: " "
+    
+  # Info item
+  info:
+    material: "PAPER"
+    name: "<bold><color:#FFB3C6>Bazaar Information</color></bold>"
+    lore:
+      - "<color:#ADB5BD>Location:</color> <white>{location}</white>"
+      - "<color:#ADB5BD>Available Items:</color> <white>{items}</white>"
+      - ""
+      - "<color:#06FFA5>⚡ Click items to purchase!</color>"
+      - "<color:#FF6B6B>⚠ Items are limited stock!</color>"
+      
+  # Close button
+  close:
+    material: "BARRIER"
+    name: "<bold><color:#FF6B6B>Close</color></bold>"
+    
+# NPC Configuration
+npc:
+  # Display name for the NPC
+  name: "<bold><color:#FFB3C6>Mobile Bazaar</color></bold>"
+  
+  # Entity type for the NPC
+  # Valid options: VILLAGER, WANDERING_TRADER, ZOMBIE_VILLAGER, WITCH, PILLAGER, VINDICATOR, EVOKER, ILLUSIONER
+  # Note: PLAYER type may not work properly in all server environments
+  # Recommended: VILLAGER (default), WANDERING_TRADER, or ZOMBIE_VILLAGER
+  type: "VILLAGER"
+  
+# Item formatting
+items:
+  # Format for item display names
+  # Placeholders: {item} = formatted item name, {tier} = tier name
+  name_format: "<white>{item}</white> <color:#ADB5BD>({tier})</color>"
+  
+  # Lore template for shop items
+  # Placeholders: {price} = item price, {tier} = tier name, {item} = formatted item name
+  lore_template:
+    - "<color:#ADB5BD>Price:</color> <color:#51CF66>{price} coins</color>"
+    - "<color:#ADB5BD>Tier:</color> <color:#FFB3C6>{tier}</color>"
+    - ""
+    - "<color:#06FFA5>Click to purchase!</color>"
+    - "<color:#FF6B6B>⚠ Limited stock!</color>"

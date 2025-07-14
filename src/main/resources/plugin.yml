@@ -1,0 +1,23 @@
+name: EdenBazaar
+version: '1.0.0'
+main: com.nenf.edenbazaar.EdenBazaar
+api-version: 1.21
+author: Nenf
+description: RNG Bazaar shop
+website: https://github.com/Nenf/EdenBazaar
+softdepend: [Vault]
+
+commands:
+  bazaar:
+    description: Main bazaar command
+    usage: /bazaar <spawn|additem|setlocation|reload>
+    permission: edenbazaar.admin
+    aliases: [mobilebazaar, mb]
+
+permissions:
+  edenbazaar.admin:
+    description: Admin permissions for EdenBazaar
+    default: op
+  edenbazaar.use:
+    description: Use the bazaar shop
+    default: true

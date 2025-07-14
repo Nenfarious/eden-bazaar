@@ -1,0 +1,61 @@
+# EdenBazaar Configuration
+# Main settings for the Mobile Bazaar plugin
+
+settings:
+  # How often the bazaar spawns (in seconds)
+  # Default: 43200 (12 hours)
+  spawn_interval: 43200
+  
+  # How long the bazaar stays active (in hours)
+  # Default: 6 hours
+  despawn_time: 6
+  
+  # Maximum number of items in the shop
+  max_shop_items: 5
+  
+  # Sound effects
+  spawn_sound: "BLOCK_NOTE_BLOCK_XYLOPHONE"
+  purchase_sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  
+  # Enhanced particle effects
+  particles:
+    # Master switch to enable/disable all particle effects
+    enabled: true
+    
+    # Type of particle to use for the main effect
+    type: "END_ROD"
+    
+    # Range in blocks where players can see particles
+    range: 100.0
+    
+    # How often particles update (in ticks, 20 = 1 second)
+    update_interval: 20
+    
+    # Number of particles in the circular effect
+    count: 16
+    
+    # Radius of the circular particle effect
+    circle_radius: 0.5
+    
+    # How much the particles move up and down
+    vertical_movement: 0.2
+    
+    # Trail particles that point towards the bazaar
+    show_trails: true
+    
+    # Range for trail particles (smaller than main range)
+    trail_range: 50.0
+
+# Economy settings
+economy:
+  # Use Vault economy if available
+  use_vault: true
+  
+  # Currency name for built-in economy
+  currency_name: "coins"
+  
+  # Currency symbol
+  currency_symbol: "⚡"
+  
+  # Default balance for new players (built-in economy only)
+  default_balance: 1000.0

@@ -1,0 +1,30 @@
+# Spawn locations for the Mobile Bazaar
+# Add your custom locations here
+
+spawn_points:
+  spawn:
+    world: "world"
+    x: 0.0
+    y: 64.0
+    z: 0.0
+    yaw: 0.0
+    pitch: 0.0
+    name: "Spawn Plaza"
+    
+  village:
+    world: "world"
+    x: 100.0
+    y: 70.0
+    z: 200.0
+    yaw: 180.0
+    pitch: 0.0
+    name: "Village Center"
+    
+  nether_portal:
+    world: "world_nether"
+    x: -50.0
+    y: 64.0
+    z: 100.0
+    yaw: 90.0
+    pitch: 0.0
+    name: "Nether Fortress"
